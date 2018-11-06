@@ -36,9 +36,9 @@ class App extends React.Component {
       <div>
         <Jumbotron />
         <Nav />
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
+        {/* <Switch> */}
+        <Route exact path="/" component={Home} />
+        {/* </Switch> */}
         <Footer />
       </div>
     );
