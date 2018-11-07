@@ -5,6 +5,59 @@
 ul {
   width: 100%;
 }
+.navbar-nav {
+  margin-left: 5%;
+}
+
+.li-animation {
+  -webkit-animation-name: nav-slide;
+  -webkit-animation-duration: 1s;
+  animation-name: nav-slide;
+  animation-duration: 1s;
+}
+
+.ul-animation {
+  -webkit-animation-name: ul-slide;
+  -webkit-animation-duration: 1s;
+  animation-name: nav-slide;
+  animation-duration: 1s;
+}
+
+@keyframes ul-slide {
+  from {
+    margin-left: 6%;
+  }
+  to {
+    margin-right: 1%;
+  }
+}
+
+@-webkit-keyframes ul-slide {
+  from {
+    margin-left: 6%;
+  }
+  to {
+    margin-right: 0.1%;
+  }
+}
+
+@keyframes nav-slide {
+  from {
+    margin-right: 9%;
+  }
+  to {
+    margin-right: 0.1%;
+  }
+}
+
+@-webkit-keyframes nav-slide {
+  from {
+    margin-left: 5%;
+  }
+  to {
+    margin-left: 62.3%;
+  }
+}
 
 .container {
   width: 102.1%;

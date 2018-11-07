@@ -18,11 +18,15 @@ class Nav extends React.Component {
         if (imagePos < topOfWindow + 0) {
           console.log("something happend");
           $(".nav li").removeClass("col-lg-2 col-md-2 col-sm-2");
-          $(".nav li").addClass("float", "left");
+          $("ul").css("margin-left", "6.2%");
+          $(".nav li").addClass("li-animation");
+          $("ul").addClass("ul-animation");
         }
         if (imagePos > topOfWindow + 0) {
           console.log("something happend");
+          $(".nav li").removeClass("li-animation");
           $(".nav li").addClass("col-lg-2 col-md-2 col-sm-2");
+          $(".navbar-nav").css("margin-left", "5%");
         }
       });
     });
